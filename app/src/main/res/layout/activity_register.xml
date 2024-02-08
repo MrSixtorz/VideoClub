@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    tools:context=".Register">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Registro"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="@string/nombre"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignBaseline="@id/Nombre"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/Nombre"
+        android:ems="10"
+        android:hint="@string/introducir_nombre"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#795548"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/Nombre"
+        android:layout_alignStart="@id/Nombre"
+        android:gravity="center"
+        android:text="@string/mail"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignBaseline="@id/email"
+        android:layout_alignStart="@id/campoNombre"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/Nombre"
+        android:ems="10"
+        android:hint="@string/introducir_email"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#795548"
+        tools:ignore="Autofill,TextFields" />
+
+    <TextView
+        android:id="@+id/Contrasegna"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/email"
+        android:layout_alignStart="@id/Nombre"
+        android:gravity="center"
+        android:text="@string/contrasegna"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/Contrasegna"
+        android:layout_alignStart="@id/campoNombre"
+        android:ems="10"
+        android:hint="@string/introducir_contrasegna"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#795548"
+        tools:ignore="Autofill,TextFields,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/repetirContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/Contrasegna"
+        android:layout_alignStart="@id/Contrasegna"
+        android:gravity="center"
+        android:text="@string/repetir_contrasena"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/campoRepetirContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/repetirContraseña"
+        android:layout_alignStart="@id/campoNombre"
+        android:ems="10"
+        android:hint="@string/repetir_contrasegna"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textColorHint="#795548"
+        tools:ignore="Autofill,TextFields" />
+
+    <TextView
+        android:id="@+id/sex1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/repetirContraseña"
+        android:layout_alignStart="@id/Nombre"
+        android:gravity="center"
+        android:text="@string/sexo"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_below="@id/repetirContraseña"
+        android:layout_alignStart="@id/Nombre"
+        android:background="@color/coral"
+        android:contentDescription="@string/cancelar"
+        android:scaleType="centerInside"
+        android:text="Cancelar"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_below="@id/campoRepetirContraseña"
+        android:layout_alignEnd="@id/campoRepetirContraseña"
+        android:background="@color/coral"
+        android:scaleType="centerInside"
+        android:text="Registrar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+
+</RelativeLayout>

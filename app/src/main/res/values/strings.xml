@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GUI Login y Registro</string>
+    <string name="usuario">Usuario:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="contrasegna">Contraseña:</string>
+    <string name="introducir_contrasegna">Introducir Contraseña</string>
+    <string name="introducir_nombre">Introducir Nombre</string>
+    <string name="repetir_contrasegna">Confirmar Contraseña</string>
+    <string name="repetir_contrasena">Confirmar Contraseña:</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="nacionalidad">Nacionalidad:</string>
+    <string name="sexo">Sexo:</string>
+    <string name="aficiones">Aficiones:</string>
+    <string name="cv_resumido">CV resumido:</string>
+    <string name="resumen">Resumen</string>
+    <string name="cine">Cine</string>
+    <string name="deporte">Deporte</string>
+    <string name="m_sica">Música</string>
+    <string name="naturaleza">Naturaleza</string>
+    <string name="cancelar">TODO</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="introducir_email">Introducir email</string>
+    <string name="mail">Email:</string>
+    <string-array name="Nacionalidad">
+        <item>Brasil</item>
+        <item>España</item>
+        <item>Portugal</item>
+        <item>Perú</item>
+        <item>Ecuador</item>
+        <item>Argentina</item>
+    </string-array>
+</resources>
