@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Boton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/botonredama</item>
+        <item name="android:textColor">@color/azulmarino</item>
+    </style>
+    <style name="CustomTextAppearance" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/ambar</item>
+    </style>
+</resources>

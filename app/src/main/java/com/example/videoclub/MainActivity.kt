@@ -1,21 +1,7 @@
 package com.example.videoclub
 
-import android.annotation.SuppressLint
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.util.Log
-import android.widget.Button
-import android.widget.TextView
-import com.google.firebase.Firebase
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
+
 import com.google.firebase.auth.auth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 
 import android.content.ContentValues
 import android.content.Intent
@@ -25,10 +11,11 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
+import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.Firebase
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.auth
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.inicio)
+        setContentView(R.layout.activity_main)
 
         auth = Firebase.auth
         // Evento personalizado para Google Analytics
@@ -54,18 +41,19 @@ class MainActivity : AppCompatActivity() {
 
         val login : Button = findViewById(R.id.login)
         val registrar : Button = findViewById(R.id.reg)
-        val email : EditText = findViewById(R.id.correo)
-        val pass : EditText = findViewById(R.id.pass)
+        val email : TextInputLayout = findViewById(R.id.correo)
+        val pass : TextInputLayout = findViewById(R.id.pass)
 
         login.setOnClickListener{
-            if (email.text.isNotEmpty() && pass.text.isNotEmpty()){
+            if (email.editText?.text?.isNotEmpty() == true && pass.editText?.text?.isNotEmpty() == true){
 
-                auth.signInWithEmailAndPassword(email.text.toString(),
-                    pass.text.toString()).addOnCompleteListener {
+                auth.signInWithEmailAndPassword(
+                    email.editText?.text.toString(),
+                    pass.editText?.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful){
                         Log.d(ContentValues.TAG, "Login de usuario")
                         val logueado = Intent (this, Welcome::class.java)
-                        logueado.putExtra("email",email.text.toString())
+                        logueado.putExtra("email",email.editText?.text?.toString())
                         startActivity(logueado)
                     } else {
                         showAlert()

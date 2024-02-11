@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "376072151489",
+    "firebase_url": "https://videoclub-f66b9-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "videoclub-f66b9",
+    "storage_bucket": "videoclub-f66b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376072151489:android:597481be630339da7c4f40",
+        "android_client_info": {
+          "package_name": "com.example.videoclub"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOuKPMuzDcEAFss0aPEw0eA_GtnrcnQs4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

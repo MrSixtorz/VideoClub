@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gris">
+    android:background="@drawable/fondo_degradado">
 
     <ImageView
         android:id="@+id/imageView"
@@ -14,14 +14,16 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:src="@drawable/firebase"
+        android:scaleType="centerInside"
+        android:src="@drawable/vc_marca"
         app:layout_constraintBottom_toTopOf="@+id/correo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vc_marca"
         tools:ignore="ContentDescription" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/correo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -32,30 +34,45 @@
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        android:textColor="@color/black"
-        android:textColorHint="#8D6E63"
+        android:textColorHint="@color/ambar"
+        app:boxStrokeColor="@color/ambar"
+        app:hintTextColor="@color/ambar"
         app:layout_constraintBottom_toTopOf="@+id/pass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill" />
+        tools:ignore="Autofill">
 
-    <EditText
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/amarillo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/pass"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:ems="10"
         android:hint="@string/contrase_a"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColor="@color/black"
-        android:textColorHint="#8D6E63"
+        android:textColorHint="@color/ambar"
         app:layout_constraintBottom_toTopOf="@+id/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="Autofill" />
+        app:boxStrokeColor="@color/ambar"
+        app:hintTextColor="@color/ambar"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/ambar"
+        tools:ignore="Autofill">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/amarillo" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login"
@@ -65,8 +82,10 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:layout_weight="1"
-        android:background="@drawable/botonredama"
+        android:backgroundTint="@color/amarillo"
         android:text="@string/login"
+        android:textColor="@color/azulmarino"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/reg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +100,9 @@
         android:layout_marginBottom="96dp"
         android:layout_weight="1"
         android:text="@string/register"
-        android:background="@drawable/botonredama"
+        android:backgroundTint="@color/amarillo"
+        android:textColor="@color/azulmarino"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
