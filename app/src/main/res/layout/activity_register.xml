@@ -109,7 +109,6 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/introducir_contrasegna"
-        android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColor="@color/amarillo"
         android:textColorHint="@color/ambar"
@@ -123,7 +122,8 @@
             android:id="@+id/campoCon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/amarillo" />
+            android:textColor="@color/amarillo"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -136,7 +136,6 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/repetir_contrasegna"
-        android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColor="@color/amarillo"
         android:textColorHint="@color/ambar"
@@ -150,20 +149,22 @@
             android:id="@+id/campoRepetirCon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/amarillo" />
+            android:textColor="@color/amarillo"
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/selAvatar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/campoRepetirContraseña"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="Selecciona un Avatar y presiona Aceptar"
+        android:gravity="center_horizontal"
+        android:text="Selecciona un Avatar deslizando a izquierda o derecha"
         android:textColor="@color/amarillo"
-        android:textSize="16sp" />
+        android:textSize="15sp" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewAvatar"
