@@ -27,7 +27,7 @@ class Register : AppCompatActivity() {
     private lateinit var database: FirebaseDatabase
     private lateinit var usuariosRef: DatabaseReference
     private var avatarPos: Int = 0
-
+    private var imageNombre: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -61,6 +61,8 @@ class Register : AppCompatActivity() {
         viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 avatarPos = position
+                val resNombre = resources.getResourceName(images[avatarPos])
+                imageNombre = resNombre.substringAfterLast("/")
             }
         })
 
@@ -78,13 +80,10 @@ class Register : AppCompatActivity() {
                         pass.editText?.text.toString()
                     ).addOnCompleteListener {
                         if (it.isSuccessful) {
-                            //Log.d(TAG, "Creado nuevo usuario")
-                            //El email será nuestra id
-                            // Añadimos datos al usuario creado
                             datosUsuario(
                                 email.editText?.text.toString(),
                                 nom.editText?.text.toString(),
-                                avatarPos
+                                imageNombre
                             )
                             val registrado = Intent(this, MainActivity::class.java)
                             startActivity(registrado)
@@ -115,13 +114,17 @@ class Register : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun datosUsuario(correo: String, nombre: String, imagenResId: Int) {
+    private fun datosUsuario(email: String, nombre: String, nombreImg: String) {
         // Creamos una variable para obtener la id del usuario que se loguea
         val usuarioActual: FirebaseUser? = auth.currentUser
+        val correo = hashMapOf("email" to email)
         if (usuarioActual != null) {
             // insertamos los datos del usuario actual en nuestra Base de Datos
-            val user = Clases(correo, nombre, imagenResId)
-            usuariosRef.child(usuarioActual.uid).setValue(user)
+            usuariosRef.child(usuarioActual.uid).setValue(correo)
+            val perfil = hashMapOf(
+                "nombre" to nombre,
+                "avatar" to nombreImg)
+            usuariosRef.child(usuarioActual.uid).child("perfil").setValue(perfil)
         } else {
 
         }
