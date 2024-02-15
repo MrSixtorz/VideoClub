@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
@@ -53,7 +54,23 @@ class Register : AppCompatActivity() {
             R.drawable.perro,
             R.drawable.starwars
         ) // Lista de IDs de recursos de las imágenes
-        val adapter = AvatarAdapter(images)
+        val adapter = AvatarAdapter(images, object : AvatarAdapter.OnClickListener {
+            override fun prevBoton() {
+                val viewPager: ViewPager2 = findViewById(R.id.viewAvatar)
+                val currentPosition = viewPager.currentItem
+                val maxPosition = viewPager.adapter?.itemCount ?: 0
+                val newPosition = if (currentPosition == 0) maxPosition - 1 else currentPosition - 1
+                viewPager.setCurrentItem(newPosition, false)
+            }
+
+            override fun sigBoton() {
+                val viewPager: ViewPager2 = findViewById(R.id.viewAvatar)
+                val currentPosition = viewPager.currentItem
+                val maxPosition = viewPager.adapter?.itemCount ?: 0
+                val newPosition = if (currentPosition == maxPosition - 1) 0 else currentPosition + 1
+                viewPager.setCurrentItem(newPosition, false)
+            }
+        })
         var viewPager: ViewPager2 = findViewById(R.id.viewAvatar)
         viewPager.adapter = adapter
 
@@ -135,8 +152,12 @@ class Register : AppCompatActivity() {
         return resources.getIdentifier(nombreImagen, "drawable", applicationContext.packageName)
     }
 
-    class AvatarAdapter(private val images: List<Int>) :
+    class AvatarAdapter(private val images: List<Int>, private val onClickListener: OnClickListener) :
         RecyclerView.Adapter<AvatarAdapter.ImageViewHolder>() {
+        interface OnClickListener {
+            fun prevBoton()
+            fun sigBoton()
+        }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
             val view = LayoutInflater.from(parent.context).inflate(R.layout.avatar, parent, false)
@@ -151,7 +172,18 @@ class Register : AppCompatActivity() {
 
         inner class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             val imageView: ImageView = itemView.findViewById(R.id.imageView)
+
+            init {
+                itemView.findViewById<ImageButton>(R.id.previo).setOnClickListener {
+                    onClickListener.prevBoton()
+                }
+
+                itemView.findViewById<ImageButton>(R.id.siguiente).setOnClickListener {
+                    onClickListener.sigBoton()
+                }
+            }
         }
+
     }
 
 }

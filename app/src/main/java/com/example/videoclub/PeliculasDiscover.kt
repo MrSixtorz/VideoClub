@@ -2,7 +2,7 @@ package com.example.videoclub
 
 import com.google.gson.annotations.SerializedName
 
-data class Result(
+data class PeliculasDiscover(
     @SerializedName("genre_ids") val genre_ids: List<Int>,
     @SerializedName("id") val id: Int,
     @SerializedName("overview") val overview: String,

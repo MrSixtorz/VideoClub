@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/imageView"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearAvatar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scaleType="centerInside"></ImageView>
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/previo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="start|center_vertical"
+        android:background="@null"
+        android:contentDescription="Previo"
+        android:scaleType="centerInside"
+        android:src="@drawable/previo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/siguiente"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|center_vertical"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:contentDescription="Siguiente"
+        android:src="@drawable/siguiente" />
+</LinearLayout>
