@@ -55,6 +55,10 @@ class Welcome : AppCompatActivity() {
 
         }
 
+        binding.avatar.setOnClickListener(){
+            val intent = Intent (this, InformacionUsuario::class.java)
+            startActivity(intent)
+        }
         binding.desloguear.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
