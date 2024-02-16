@@ -54,6 +54,7 @@ class Register : AppCompatActivity() {
             R.drawable.perro,
             R.drawable.starwars
         ) // Lista de IDs de recursos de las imágenes
+        // Con la lógica de los botones hacemos el efecto de carrusel infinito
         val adapter = AvatarAdapter(images, object : AvatarAdapter.OnClickListener {
             override fun prevBoton() {
                 val viewPager: ViewPager2 = findViewById(R.id.viewAvatar)
@@ -71,6 +72,8 @@ class Register : AppCompatActivity() {
                 viewPager.setCurrentItem(newPosition, false)
             }
         })
+
+
         var viewPager: ViewPager2 = findViewById(R.id.viewAvatar)
         viewPager.adapter = adapter
 
@@ -145,11 +148,6 @@ class Register : AppCompatActivity() {
         } else {
 
         }
-    }
-
-    private fun obtenerImagenResId(nombreImagen: String): Int {
-        val resources = applicationContext.resources
-        return resources.getIdentifier(nombreImagen, "drawable", applicationContext.packageName)
     }
 
     class AvatarAdapter(private val images: List<Int>, private val onClickListener: OnClickListener) :

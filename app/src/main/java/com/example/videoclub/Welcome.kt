@@ -7,10 +7,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager2.widget.ViewPager2
 import com.example.videoclub.databinding.ActivityWelcomeBinding
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -42,11 +47,11 @@ class Welcome : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
         usuariosRef = database.getReference("usuarios")
         saludo = binding.welcome
-        var servicio = RetrofitServiceFactory.makeRetrofitService()
+//        var servicio = RetrofitServiceFactory.makeRetrofitService()
 
-        lifecycleScope.launch{
-            val discMovies = servicio.listPopularMovies("30d6404fc8d3086411532ee450413606", "EU")
-        }
+//        lifecycleScope.launch{
+//            val discMovies = servicio.listPopularMovies("30d6404fc8d3086411532ee450413606", "EU")
+//        }
 
         obtenerNombre { nombreUsuario, nombreImagen ->
             saludo.text = "Hola, $nombreUsuario"
@@ -54,6 +59,39 @@ class Welcome : AppCompatActivity() {
             avatar.setImageResource(imagenResourceId)
 
         }
+
+        val seriesList = mutableListOf<SeriesVotos>()
+
+        val seriesRef = FirebaseDatabase.getInstance().getReference("series/results")
+
+        seriesRef.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                for (snapshot in dataSnapshot.children) {
+                    val serie = snapshot.getValue(SeriesVotos::class.java)
+                    serie?.let { seriesList.add(it) }
+                }
+                // Aquí ya tienes todas las series en la lista seriesList
+                // Puedes utilizar esta lista en tu RecyclerView
+                // Por ejemplo, pasándola a tu adaptador
+                val adapter = PrincipalAdapter(seriesList.)
+                recyclerView.adapter = adapter
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+
+            }
+        })
+
+
+        var viewPager: ViewPager2 = findViewById(R.id.viewAvatar)
+        viewPager.adapter = adapter
+
+        // Manejar la selección de la imagen
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+
+            }
+        })
 
         binding.avatar.setOnClickListener(){
             val intent = Intent (this, InformacionUsuario::class.java)
@@ -101,5 +139,26 @@ class Welcome : AppCompatActivity() {
         }
     }
 
+    class PrincipalAdapter(private val images: List<Int>) :
+        RecyclerView.Adapter<PrincipalAdapter.ImageViewHolder>() {
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageViewHolder {
+            val view = LayoutInflater.from(parent.context).inflate(R.layout.avatar, parent, false)
+            return ImageViewHolder(view)
+        }
+
+        override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
+            holder.imageView.setImageResource(images[position])
+        }
+
+        override fun getItemCount(): Int = images.size
+
+        inner class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+            val imageView: ImageView = itemView.findViewById(R.id.imageView)
+        }
+
+    }
 
 }
+
+

@@ -30,13 +30,13 @@
             <TextView
                 android:id="@+id/text_titulo"
                 android:layout_width="150dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="3"
                 android:text="Título de la película muy largo, el regreso del titulo de la pelicula"
                 android:textColor="@android:color/black"
-                android:textSize="14sp"
-                android:maxLines="3"
-                android:ellipsize="end"
-                android:gravity="center_horizontal"/>
+                android:textSize="14sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

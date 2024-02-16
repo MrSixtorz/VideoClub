@@ -6,5 +6,41 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo_degradado"
     tools:context=".InformacionUsuario">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Marca"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:scaleType="centerInside"
+            android:clickable="true"
+            app:srcCompat="@drawable/vc_marca" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/amarillo"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:scaleType="fitEnd" />
+
+    </LinearLayout>
 
 </RelativeLayout>
