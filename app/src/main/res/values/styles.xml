@@ -7,4 +7,8 @@
     <style name="CustomTextAppearance" parent="TextAppearance.Material3.BodySmall">
         <item name="android:textColor">@color/ambar</item>
     </style>
+    <style name="circular">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearAvatar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,12 +16,13 @@
         android:scaleType="centerInside"
         android:src="@drawable/previo" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:scaleType="centerInside" />
+        android:scaleType="centerInside"
+        app:shapeAppearanceOverlay="@style/circular"/>
 
     <ImageButton
         android:id="@+id/siguiente"

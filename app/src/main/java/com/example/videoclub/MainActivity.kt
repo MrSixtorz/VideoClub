@@ -10,6 +10,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AlertDialog
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.videoclub.adapter.PeliculasAdapter
 import com.example.videoclub.databinding.ActivityMainBinding
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.Firebase

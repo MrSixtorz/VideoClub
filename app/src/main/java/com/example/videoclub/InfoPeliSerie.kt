@@ -3,13 +3,13 @@ package com.example.videoclub
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.videoclub.databinding.ActivityInformacionUsuarioBinding
+import com.example.videoclub.databinding.ActivityInfoPeliSerieBinding
 
-class InformacionUsuario : AppCompatActivity() {
-    private lateinit var binding :ActivityInformacionUsuarioBinding
+class InfoPeliSerie : AppCompatActivity() {
+    private lateinit var binding : ActivityInfoPeliSerieBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityInformacionUsuarioBinding.inflate(layoutInflater)
+        binding = ActivityInfoPeliSerieBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         obtenerNombre { nombreUsuario, nombreImagen ->

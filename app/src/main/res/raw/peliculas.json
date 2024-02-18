@@ -1,0 +1,407 @@
+{
+   "page":1,
+   "results":[
+      {
+         "adult":false,
+         "backdrop_path":"/pWsD91G2R1Da3AKM3ymr3UoIfRb.jpg",
+         "genre_ids":[
+            878,
+            28,
+            18
+         ],
+         "id":933131,
+         "original_language":"ko",
+         "original_title":"황야",
+         "overview":"Después de un terremoto que convierte Seúl en una tierra inhóspita y sin ley, un cazador entra en acción para rescatar a una chica en manos de un médico trastornado. Secuela del film de 2023 “Concrete Utopia”",
+         "popularity":1924.206,
+         "poster_path":"/jPGbcbMlzGUECukPhkEMVt1Kvs5.jpg",
+         "release_date":"2024-01-26",
+         "title":"Cazadores en tierra inhóspita",
+         "video":false,
+         "vote_average":6.708,
+         "vote_count":407
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/unvtbkgxh47BewQ8pENvdOdme0r.jpg",
+         "genre_ids":[
+            28,
+            18
+         ],
+         "id":1212073,
+         "original_language":"de",
+         "original_title":"60 Minuten",
+         "overview":"Desesperado por no perder la custodia de su hija, un luchador de artes marciales mixtas abandona una pelea y recorre Berlín a todo gas para verla el día de su cumpleaños.",
+         "popularity":1252.532,
+         "poster_path":"/cND79ZWPFINDtkA8uwmQo1gnPPE.jpg",
+         "release_date":"2024-01-19",
+         "title":"60 minutos",
+         "video":false,
+         "vote_average":6.875,
+         "vote_count":352
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/2xBSjhAL7niE7BzvsifQ3BFZVBV.jpg",
+         "genre_ids":[
+            878,
+            28,
+            12
+         ],
+         "id":634492,
+         "original_language":"en",
+         "original_title":"Madame Web",
+         "overview":"Una historia de origen de la clarividente conocida como Madame Web, cuyas habilidades psíquicas le permiten ver dentro del mundo de las arañas.",
+         "popularity":1108.735,
+         "poster_path":"/4gCwRJWKG7PnEVtCxgKymF9kKxO.jpg",
+         "release_date":"2024-02-14",
+         "title":"Madame Web",
+         "video":false,
+         "vote_average":5.5,
+         "vote_count":120
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/yyFc8Iclt2jxPmLztbP617xXllT.jpg",
+         "genre_ids":[
+            35,
+            10751,
+            14
+         ],
+         "id":787699,
+         "original_language":"en",
+         "original_title":"Wonka",
+         "overview":"Basada en el personaje que protagoniza \"Charlie y la fábrica de chocolate\", el libro infantil más emblemático de Roald Dahl y uno de los más vendidos de todos los tiempos, \"Wonka\" cuenta la historia de cómo el mayor inventor, mago y chocolatero del mundo se convirtió en el querido Willy Wonka que conocemos hoy en día.",
+         "popularity":1127.617,
+         "poster_path":"/tFyQa5WQqldIL44HBLaCmn5eERD.jpg",
+         "release_date":"2023-12-06",
+         "title":"Wonka",
+         "video":false,
+         "vote_average":7.199,
+         "vote_count":2130
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/criPrxkTggCra1jch49jsiSeXo1.jpg",
+         "genre_ids":[
+            878,
+            12,
+            28
+         ],
+         "id":609681,
+         "original_language":"en",
+         "original_title":"The Marvels",
+         "overview":"Cuando sus obligaciones la envían a un agujero de gusano vinculado a un revolucionario kree, los poderes de Carol Danvers, la capitana Marvel, se entremezclan con los de Kamala Khan, también conocida como la Sra. Marvel y la sobrina de Carol, ahora astronauta de S.A.B.E.R., Monica Rambeau. Juntas, deberán salvar el universo como \"The Marvels\".",
+         "popularity":1013.855,
+         "poster_path":"/vpuuFM032yiX8tox4L84Wl9MGjG.jpg",
+         "release_date":"2023-11-08",
+         "title":"The Marvels",
+         "video":false,
+         "vote_average":6.283,
+         "vote_count":1715
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/ay0PJQZizDXk0pzhoGX4v7K9h7A.jpg",
+         "genre_ids":[
+            28,
+            53
+         ],
+         "id":1214314,
+         "original_language":"en",
+         "original_title":"One More Shot",
+         "overview":"Tras el atentado contra el centro clandestino de Polonia, el Navy SEAL Jake Harris recibe la orden de escoltar al sospechoso de terrorismo Amin Mansur hasta Washington D.C. para ser interrogado.",
+         "popularity":963.43,
+         "poster_path":"/pJ8mTt2L9PtpEniMJ9dzpQ9avLK.jpg",
+         "release_date":"2024-01-12",
+         "title":"Una vez más",
+         "video":false,
+         "vote_average":6.669,
+         "vote_count":145
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/r9oTasGQofvkQY5vlUXglneF64Z.jpg",
+         "genre_ids":[
+            28,
+            35
+         ],
+         "id":1029575,
+         "original_language":"en",
+         "original_title":"The Family Plan",
+         "overview":"Dan Morgan es muchas cosas: un marido devoto, un padre cariñoso, un reputado vendedor de coches. También es un exasesino. Y, cuando su pasado alcanza su presente, se ve obligado a embarcar a su ingenua familia en un viaje por carretera sin igual.",
+         "popularity":1007.602,
+         "poster_path":"/7mEX07jWRYrjarW84sBeFghGMfa.jpg",
+         "release_date":"2023-12-14",
+         "title":"Plan en familia",
+         "video":false,
+         "vote_average":7.33,
+         "vote_count":924
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/w12jjv5XNNpHgM4he1COnfWiA93.jpg",
+         "genre_ids":[
+            28,
+            27,
+            35,
+            53
+         ],
+         "id":1211483,
+         "original_language":"en",
+         "original_title":"Skal - Fight for Survival",
+         "overview":"Una gran celebridad de Internet organiza una fiesta para alcanzar los 3 millones de suscriptores. Un apocalipsis pone fin abruptamente a las festividades y lo obliga a una lucha épica para mantenerse con vida.",
+         "popularity":980.086,
+         "poster_path":"/uQkiDKQyun13mqsOXv7I5MRKr0q.jpg",
+         "release_date":"2023-11-24",
+         "title":"Skal - Fight for Survival",
+         "video":false,
+         "vote_average":5.913,
+         "vote_count":23
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/rz8GGX5Id2hCW1KzAIY4xwbQw1w.jpg",
+         "genre_ids":[
+            28,
+            35,
+            80
+         ],
+         "id":955916,
+         "original_language":"en",
+         "original_title":"Lift",
+         "overview":"Una banda internacional de atracadores recibe el encargo de evitar un ataque terrorista. Para ello, debe llevar a cabo un atraco en un avión en pleno vuelo",
+         "popularity":929.212,
+         "poster_path":"/veUHao6XPxcb5MeRDdhokevxiz5.jpg",
+         "release_date":"2024-01-10",
+         "title":"Lift: Un robo de primera clase",
+         "video":false,
+         "vote_average":6.585,
+         "vote_count":792
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/meyhnvssZOPPjud4F1CjOb4snET.jpg",
+         "genre_ids":[
+            16,
+            28,
+            12,
+            35,
+            10751
+         ],
+         "id":940551,
+         "original_language":"en",
+         "original_title":"Migration",
+         "overview":"Una familia de patos intenta convencer a su sobreprotector padre para que se vayan a las vacaciones de su vida.",
+         "popularity":794.761,
+         "poster_path":"/brAqSBoSXzxEYV6rGYwbRvhlXCE.jpg",
+         "release_date":"2023-12-06",
+         "title":"Migración: un viaje patas arriba",
+         "video":false,
+         "vote_average":7.63,
+         "vote_count":655
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/4MCKNAc6AbWjEsM2h9Xc29owo4z.jpg",
+         "genre_ids":[
+            28,
+            53,
+            18
+         ],
+         "id":866398,
+         "original_language":"en",
+         "original_title":"The Beekeeper",
+         "overview":"La brutal campaña de venganza de Adam Clay adquiere tintes nacionales tras revelarse que es un antiguo agente de una poderosa organización clandestina conocida como \"Beekeeper\".",
+         "popularity":723.331,
+         "poster_path":"/bHZQYKJV1rV01S3kNZ3hEYz8VNM.jpg",
+         "release_date":"2024-01-10",
+         "title":"Beekeeper: El protector",
+         "video":false,
+         "vote_average":7.264,
+         "vote_count":1149
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/cnqwv5Uz3UW5f086IWbQKr3ksJr.jpg",
+         "genre_ids":[
+            28,
+            12,
+            14
+         ],
+         "id":572802,
+         "original_language":"en",
+         "original_title":"Aquaman and the Lost Kingdom",
+         "overview":"Al no poder derrotar a Aquaman la primera vez, Black Manta, todavía impulsado por la necesidad de vengar la muerte de su padre, no se detendrá ante nada para derrotar a Aquaman de una vez por todas. Esta vez Black Manta es más formidable que nunca y ejerce el poder del mítico Tridente Negro, que desata una fuerza antigua y malévola.  Para derrotarlo, Aquaman recurrirá a su hermano encarcelado Orm, el ex rey de la Atlántida, para forjar una alianza improbable. Juntos, deben dejar de lado sus diferencias para proteger su reino y salvar a la familia de Aquaman, y al mundo, de una destrucción irreversible.",
+         "popularity":723.507,
+         "poster_path":"/3OdMJBOGkp62e0DfY4ZykL9RuCP.jpg",
+         "release_date":"2023-12-20",
+         "title":"Aquaman y El Reino Perdido",
+         "video":false,
+         "vote_average":6.912,
+         "vote_count":1685
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/ehumsuIBbgAe1hg343oszCLrAfI.jpg",
+         "genre_ids":[
+            16,
+            10751,
+            14,
+            12
+         ],
+         "id":1022796,
+         "original_language":"en",
+         "original_title":"Wish",
+         "overview":"Asha y una pequeña bola de energía ilimitada llamada Star demuestran que cuando la voluntad de un ser humano valiente se conecta con la magia de las estrellas, pueden suceder cosas maravillosas.",
+         "popularity":738.649,
+         "poster_path":"/1VXMrUioKfPAPSsezHKexx77Dbz.jpg",
+         "release_date":"2023-11-13",
+         "title":"Wish: El poder de los deseos",
+         "video":false,
+         "vote_average":6.654,
+         "vote_count":736
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/8GnWDLn2AhnmkQ7hlQ9NJUYobSS.jpg",
+         "genre_ids":[
+            18,
+            878,
+            28
+         ],
+         "id":695721,
+         "original_language":"en",
+         "original_title":"The Hunger Games: The Ballad of Songbirds \u0026 Snakes",
+         "overview":"Ambientada en un Panem postapocalíptico, nos hace retroceder varias décadas antes del comienzo de las aventuras de Katniss Everdeen. El joven Coriolanus Snow será el mentor de Lucy Gray Baird, la niña seleccionada como tributo del empobrecido Distrito 12. La joven sorprenderá a todos al cantar en la ceremonia de inauguración de los Décimos Juegos del Hambre en los que Snow intentará aprovecharse de su talento y encanto para sobrevivir.",
+         "popularity":769.463,
+         "poster_path":"/lQS3Owbte49Mkz5nFach4UgSZDF.jpg",
+         "release_date":"2023-11-15",
+         "title":"Los Juegos del Hambre: Balada de pájaros cantores y serpientes",
+         "video":false,
+         "vote_average":7.204,
+         "vote_count":1756
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/gg4zZoTggZmpAQ32qIrP5dtnkEZ.jpg",
+         "genre_ids":[
+            28,
+            80,
+            53
+         ],
+         "id":891699,
+         "original_language":"en",
+         "original_title":"Silent Night",
+         "overview":"Es Nochebuena y un padre es testigo de la muerte de su hijo cuando este queda atrapado en un fuego cruzado entre bandas. Roto de dolor y sin voz, debido a una herida profunda que afecta a sus cuerdas vocales, decidirá someterse a un estricto entrenamiento para vengar su muerte.",
+         "popularity":664.146,
+         "poster_path":"/e68RMVPRod1k4x4j3nBYwQrfGBK.jpg",
+         "release_date":"2023-11-30",
+         "title":"Noche de paz",
+         "video":false,
+         "vote_average":6.326,
+         "vote_count":469
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/sRLC052ieEzkQs9dEtPMfFxYkej.jpg",
+         "genre_ids":[
+            878,
+            18,
+            28
+         ],
+         "id":848326,
+         "original_language":"en",
+         "original_title":"Rebel Moon - Part One: A Child of Fire",
+         "overview":"Cuando una pacífica colonia en los confines de la galaxia se ve amenazada por un poder tiránico, su mejor baza para sobrevivir es la misteriosa Kora. Esta reúne a un grupo dispuesto a luchar, formado por forasteros, insurgentes, campesinos y huérfanos de guerra de varios planetas unidos por una causa común: la redención y la venganza. Mientras la sombra de todo un reino se cierne sobre la más improbable de las lunas, se libra una batalla por el destino de una galaxia y se forja un nuevo ejército de héroes.",
+         "popularity":651.587,
+         "poster_path":"/2R7RUo3EGs3T3UdKPlfVQWkyUCD.jpg",
+         "release_date":"2023-12-15",
+         "title":"Rebel Moon (Parte uno): La niña del fuego",
+         "video":false,
+         "vote_average":6.402,
+         "vote_count":1444
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/zLj0peaxy5y2SlC6wNIQ4V0pfqg.jpg",
+         "genre_ids":[
+            16,
+            10751,
+            35,
+            14
+         ],
+         "id":1139829,
+         "original_language":"en",
+         "original_title":"Orion and the Dark",
+         "overview":"Un niño muy imaginativo se enfrenta a sus miedos en un viaje inolvidable por la noche con su nuevo amigo Oscuridad, un ser enorme y sonriente.",
+         "popularity":639.619,
+         "poster_path":"/6cpb2IP2c8gEbS2E2VfLKfx04cP.jpg",
+         "release_date":"2024-02-02",
+         "title":"Orión y la oscuridad",
+         "video":false,
+         "vote_average":6.699,
+         "vote_count":214
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/yl2GfeCaPoxChcGyM5p7vYp1CKS.jpg",
+         "genre_ids":[
+            28,
+            35,
+            10749
+         ],
+         "id":848187,
+         "original_language":"en",
+         "original_title":"Role Play",
+         "overview":"Emma y Dave animan su aniversario de bodas con una noche de juego de roles en Nueva York. Pero todo peligra cuando la vida secreta de Emma como sicaria internacional, que David no conocía, queda expuesta por Bob y pone en peligro a su familia. Emma tiene que confiar en sus habilidades letales y su determinación para proteger a su familia a toda costa.",
+         "popularity":640.235,
+         "poster_path":"/bnG0VwIw9oBFVn58Z9cixVLsn93.jpg",
+         "release_date":"2024-01-04",
+         "title":"Role Play",
+         "video":false,
+         "vote_average":6.022,
+         "vote_count":347
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/47SVqaO02doJ06tOmrjiWDkwU3T.jpg",
+         "genre_ids":[
+            28,
+            53
+         ],
+         "id":927107,
+         "original_language":"en",
+         "original_title":"The Bricklayer",
+         "overview":"La CIA está siendo chantajeada: alguien está asesinando periodistas extranjeros y haciendo que la Agencia parezca la responsable. Mientras el mundo comienza a unir sus fuerzas contra EE.UU., la CIA decide recuperar a su agente retirado más brillante y rebelde, forzándole a enfrentarse a su pasado para que intente desenmascarar una conspiración internacional.",
+         "popularity":590.628,
+         "poster_path":"/3KCOOAyKk8kNN3MbtH3BjgJ35fS.jpg",
+         "release_date":"2023-12-14",
+         "title":"Agente X: Última misión",
+         "video":false,
+         "vote_average":6.115,
+         "vote_count":113
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/nTPFkLUARmo1bYHfkfdNpRKgEOs.jpg",
+         "genre_ids":[
+            35,
+            10749
+         ],
+         "id":1072790,
+         "original_language":"en",
+         "original_title":"Anyone But You",
+         "overview":"Después de una primera cita increíble, la ardiente atracción entre ambos se enfría. Parecían la pareja perfecta, pero algo sucede y la cosa no va a más. Hasta que se reencuentran inesperadamente en una boda en Australia. Allí hacen lo que haría cualquier adulto: fingir que son una pareja.",
+         "popularity":558.259,
+         "poster_path":"/3ltpe5KJt8c8hxHiF2u4jCinD4U.jpg",
+         "release_date":"2023-12-21",
+         "title":"Cualquiera menos tú",
+         "video":false,
+         "vote_average":6.9,
+         "vote_count":431
+      }
+   ],
+   "total_pages":42503,
+   "total_results":850060
+}

@@ -52,14 +52,10 @@ dependencies {
     // ViewPager2
     implementation("androidx.viewpager2:viewpager2:1.0.0")
 
-    //Retrofit para manejar BD de una api en json como movieDB
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-
-    // Picasso para transformar url de imagenes en imagenes
-    implementation ("com.squareup.picasso:picasso:2.8")
+    //Glide
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    //GSON
+    implementation("com.google.code.gson:gson:2.10.1")
 
     // Importamos la Firebase BoM (se supone que contiene todas las librerías)
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
