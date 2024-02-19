@@ -6,7 +6,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
+import com.example.videoclub.InfoPeliSerie
 import com.example.videoclub.InformacionUsuario
+import com.example.videoclub.PeliSerie
 import com.example.videoclub.R
 import com.example.videoclub.databinding.PortadaBinding
 
@@ -18,12 +20,12 @@ class PeliculasViewHolder(view: View) : ViewHolder(view) {
     val peliculaPortada = view.findViewById<ImageView>(R.id.ivPortada)
 
     // Funcion que recibe los datos de la pelicula
-    fun render(portadaModel: Pair<String, String>) {
-        val (title, urlImagen) = portadaModel
-        tituloPortada.text = title
-        Glide.with(peliculaPortada.context).load(urlImagen).into(peliculaPortada)
+    fun render(peliSerie: PeliSerie) {
+        tituloPortada.text = peliSerie.title
+        Glide.with(peliculaPortada.context).load(peliSerie.backdrop_path).into(peliculaPortada)
         peliculaPortada.setOnClickListener {
-            val intent = Intent(peliculaPortada.context, InformacionUsuario::class.java)
+            val intent = Intent(peliculaPortada.context, InfoPeliSerie::class.java)
+            intent.putExtra("peliserie", peliSerie)
             peliculaPortada.context.startActivity(intent)
         }
     }
@@ -34,10 +36,11 @@ class PeliculasCarruselViewHolder(view: View) : ViewHolder(view) {
     val peliculaCarrusel = view.findViewById<ImageView>(R.id.ivCarrusel)
 
     // Funcion que recibe los datos de la pelicula
-    fun render(portadaModel: String) {
-        Glide.with(peliculaCarrusel.context).load(portadaModel).into(peliculaCarrusel)
+    fun render(peliSerie: PeliSerie) {
+        Glide.with(peliculaCarrusel.context).load(peliSerie.poster_path).into(peliculaCarrusel)
         peliculaCarrusel.setOnClickListener {
-            val intent = Intent(peliculaCarrusel.context, InformacionUsuario::class.java)
+            val intent = Intent(peliculaCarrusel.context, InfoPeliSerie::class.java)
+            intent.putExtra("peliserie", peliSerie)
             peliculaCarrusel.context.startActivity(intent)
         }
     }

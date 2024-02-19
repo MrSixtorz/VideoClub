@@ -1,6 +1,6 @@
 package com.example.videoclub
 
-data class Pelicula(
+data class Peliculas(
     val backdrop_path: String,
     val id: Int,
     val overview: String,

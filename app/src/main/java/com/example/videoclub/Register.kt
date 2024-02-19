@@ -63,7 +63,6 @@ class Register : AppCompatActivity() {
                 val newPosition = if (currentPosition == 0) maxPosition - 1 else currentPosition - 1
                 viewPager.setCurrentItem(newPosition, false)
             }
-
             override fun sigBoton() {
                 val viewPager: ViewPager2 = findViewById(R.id.viewAvatar)
                 val currentPosition = viewPager.currentItem

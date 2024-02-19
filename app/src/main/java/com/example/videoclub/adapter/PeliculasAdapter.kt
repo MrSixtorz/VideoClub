@@ -3,9 +3,10 @@ package com.example.videoclub.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.videoclub.PeliSerie
 import com.example.videoclub.R
 
-class PeliculasAdapter(private val listaImagenes: ArrayList<Pair<String, String>>): RecyclerView.Adapter<PeliculasViewHolder>() {
+class PeliculasAdapter(private val listaImagenes: ArrayList<PeliSerie>): RecyclerView.Adapter<PeliculasViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PeliculasViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return PeliculasViewHolder(layoutInflater.inflate(R.layout.portada, parent, false))
@@ -17,7 +18,7 @@ class PeliculasAdapter(private val listaImagenes: ArrayList<Pair<String, String>
         holder.render(item)
     }
 }
-class PeliculasCarruselAdapter(private val listaImagenes: List<String>): RecyclerView.Adapter<PeliculasCarruselViewHolder>() {
+class PeliculasCarruselAdapter(private val listaImagenes: ArrayList<PeliSerie>): RecyclerView.Adapter<PeliculasCarruselViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PeliculasCarruselViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return PeliculasCarruselViewHolder(layoutInflater.inflate(R.layout.carrusel, parent, false))

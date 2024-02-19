@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".EditarUsuario"
+            android:exported="false" />
+        <activity
             android:name=".InfoPeliSerie"
             android:exported="false" />
         <activity

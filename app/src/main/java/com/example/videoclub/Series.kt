@@ -1,7 +1,7 @@
 package com.example.videoclub
 
 
-data class Serie(
+data class Series(
     val backdrop_path: String?,
     val id: Int,
     val overview: String,

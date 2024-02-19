@@ -42,3 +42,4 @@ fun obtenerNombre(callback: (String, String?) -> Unit) {
         callback("Usuario no autenticado", null)
     }
 }
+
