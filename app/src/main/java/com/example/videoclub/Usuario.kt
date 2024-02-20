@@ -140,6 +140,8 @@ class Usuario : AppCompatActivity() {
         }
         binding.Aceptar.setOnClickListener {
             usuariosRef.child("avatar").setValue(imageNombre)
+            val intent = Intent (this,Usuario::class.java)
+            startActivity(intent)
         }
         binding.Atras.setOnClickListener {
             val intent = Intent(this,Welcome::class.java)
