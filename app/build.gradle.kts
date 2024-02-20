@@ -54,8 +54,6 @@ dependencies {
 
     //Glide
     implementation ("com.github.bumptech.glide:glide:4.16.0")
-    //GSON
-    implementation("com.google.code.gson:gson:2.10.1")
 
     // Importamos la Firebase BoM (se supone que contiene todas las librerías)
     implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
