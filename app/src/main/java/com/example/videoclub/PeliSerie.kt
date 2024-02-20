@@ -8,11 +8,13 @@ data class PeliSerie(
     val id: Int,
     val overview: String?,
     val poster_path: String?,
-    val title: String?
+    val title: String?,
+    val trailer: String?
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readInt(),
+        parcel.readString(),
         parcel.readString(),
         parcel.readString(),
         parcel.readString()
@@ -25,6 +27,7 @@ data class PeliSerie(
         parcel.writeString(overview)
         parcel.writeString(poster_path)
         parcel.writeString(title)
+        parcel.writeString(trailer)
     }
 
     override fun describeContents(): Int {

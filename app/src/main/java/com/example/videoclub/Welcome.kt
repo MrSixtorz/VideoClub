@@ -63,11 +63,11 @@ class Welcome : AppCompatActivity() {
         }
 
         binding.avatar.setOnClickListener() {
-            val intent = Intent(this, InformacionUsuario::class.java)
+            val intent = Intent(this, Usuario::class.java)
             startActivity(intent)
         }
         binding.desloguear.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
         binding.izquierda.setOnClickListener {
@@ -108,9 +108,10 @@ class Welcome : AppCompatActivity() {
                     val overview = portadaSnapshot.child("overview").getValue(String::class.java)
                     val posterPath = portadaSnapshot.child("poster_path").getValue(String::class.java)
                     val title = portadaSnapshot.child("title").getValue(String::class.java)
+                    val trailer = portadaSnapshot.child("trailer").getValue(String::class.java)
 
                     backdropPath?.let {
-                        val portada = PeliSerie(backdropPath, id ?: 0, overview ?: "", posterPath ?: "", title ?: "")
+                        val portada = PeliSerie(backdropPath, id ?: 0, overview ?: "", posterPath ?: "", title ?: "", trailer ?:"")
                         portadas.add(portada)
                     }
                 }
@@ -138,9 +139,10 @@ class Welcome : AppCompatActivity() {
                     val overview = portadaSnapshot.child("overview").getValue(String::class.java)
                     val posterPath = portadaSnapshot.child("poster_path").getValue(String::class.java)
                     val title = portadaSnapshot.child("title").getValue(String::class.java)
+                    val trailer = portadaSnapshot.child("trailer").getValue(String::class.java)
 
                     backdropPath?.let {
-                        val portada = PeliSerie(backdropPath, id ?: 0, overview ?: "", posterPath ?: "", title ?: "")
+                        val portada = PeliSerie(backdropPath, id ?: 0, overview ?: "", posterPath ?: "", title ?: "", trailer ?:"")
                         posters.add(portada)
                     }
                 }

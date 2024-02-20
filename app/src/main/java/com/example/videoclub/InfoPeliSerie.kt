@@ -1,11 +1,9 @@
 package com.example.videoclub
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.webkit.WebView
-import android.webkit.WebViewClient
-import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.videoclub.databinding.ActivityInfoPeliSerieBinding
 
@@ -34,7 +32,13 @@ class InfoPeliSerie : AppCompatActivity() {
         binding.sinopsis.text = peliserie!!.overview
         Glide.with(this).load(peliserie.backdrop_path).into(binding.trailer)
         binding.trailer.setOnClickListener {
-            Toast.makeText(this,"Vemos un trailer precioso", Toast.LENGTH_LONG).show()
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(peliserie.trailer)
+            startActivity(intent)
+        }
+        binding.avatar.setOnClickListener{
+            val intent = Intent(this, Usuario::class.java)
+            startActivity(intent)
         }
 
     }

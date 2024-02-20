@@ -26,6 +26,15 @@
     <string name="bienvenido">Bienvenido</string>
     <string name="introducir_email">Introducir email</string>
     <string name="mail">Email:</string>
+    <string name="home">Home</string>
+    <string name="infotrailer">InfoTrailer</string>
+    <string name="titulo">Titulo</string>
+    <string name="click_en_la_imagen_para_ver_el_trailer">Click en la imagen para ver el trailer</string>
+    <string name="linktrailer">linkTrailer</string>
+    <string name="sinopsis">Sinopsis</string>
+    <string name="poster">Poster</string>
+    <string name="prueba">Prueba</string>
+    <string name="unirse">Unirse</string>
     <string-array name="Nacionalidad">
         <item>Brasil</item>
         <item>España</item>

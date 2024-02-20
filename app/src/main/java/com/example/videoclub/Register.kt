@@ -1,6 +1,5 @@
 package com.example.videoclub
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,6 +13,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
+import com.example.videoclub.databinding.ActivityRegisterBinding
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
@@ -24,6 +24,7 @@ import com.google.firebase.database.FirebaseDatabase
 
 class Register : AppCompatActivity() {
 
+    private lateinit var binding: ActivityRegisterBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var database: FirebaseDatabase
     private lateinit var usuariosRef: DatabaseReference
@@ -32,18 +33,20 @@ class Register : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
 
         auth = Firebase.auth
         database = FirebaseDatabase.getInstance()
         usuariosRef = database.getReference("usuarios")
 
-        val registrar: Button = findViewById(R.id.Registrar)
-        val cancel: Button = findViewById(R.id.Cancelar)
-        val email: TextInputLayout = findViewById(R.id.campoEmail)
-        val pass: TextInputLayout = findViewById(R.id.campoContraseña)
-        val confPass: TextInputLayout = findViewById(R.id.campoRepetirContraseña)
-        val nom: TextInputLayout = findViewById(R.id.campoNombre)
+        val registrar: Button = binding.Registrar
+        val cancel: Button = binding.Cancelar
+        val email: TextInputLayout = binding.campoEmail
+        val pass: TextInputLayout = binding.campoContrase
+        val confPass: TextInputLayout = binding.campoRepetirContrase
+        val nom: TextInputLayout = binding.campoNombre
         val images = listOf(
             R.drawable.delfin,
             R.drawable.elefante,
@@ -104,7 +107,7 @@ class Register : AppCompatActivity() {
                                 nom.editText?.text.toString(),
                                 imageNombre
                             )
-                            val registrado = Intent(this, MainActivity::class.java)
+                            val registrado = Intent(this, Login::class.java)
                             startActivity(registrado)
                         } else {
                             showAlert("Error creando el usuario")
@@ -118,7 +121,7 @@ class Register : AppCompatActivity() {
         }
 
         cancel.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
     }

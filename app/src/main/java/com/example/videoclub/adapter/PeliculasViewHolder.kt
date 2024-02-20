@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.bumptech.glide.Glide
 import com.example.videoclub.InfoPeliSerie
-import com.example.videoclub.InformacionUsuario
 import com.example.videoclub.PeliSerie
 import com.example.videoclub.R
 import com.example.videoclub.databinding.PortadaBinding

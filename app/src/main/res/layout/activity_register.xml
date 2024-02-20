@@ -60,6 +60,8 @@
         android:minHeight="48dp"
         android:textColor="@color/white"
         android:textColorHint="@color/ambar"
+        app:errorTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
         app:boxStrokeColor="@color/ambar"
         app:hintTextColor="@color/ambar"
         tools:ignore="Autofill">
@@ -88,6 +90,8 @@
         android:minHeight="48dp"
         android:textColor="@color/amarillo"
         android:textColorHint="@color/ambar"
+        app:errorTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
         app:boxStrokeColor="@color/ambar"
         app:hintTextColor="@color/ambar"
         tools:ignore="Autofill,TextFields">
@@ -100,7 +104,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/campoContraseña"
+        android:id="@+id/campoContrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/campoEmail"
@@ -112,6 +116,8 @@
         android:minHeight="48dp"
         android:textColor="@color/amarillo"
         android:textColorHint="@color/ambar"
+        app:errorTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
         app:boxStrokeColor="@color/ambar"
         app:hintTextColor="@color/ambar"
         app:passwordToggleEnabled="true"
@@ -127,10 +133,10 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/campoRepetirContraseña"
+        android:id="@+id/campoRepetirContrase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/campoContraseña"
+        android:layout_below="@id/campoContrase"
         android:layout_alignStart="@id/campoNombre"
         android:layout_alignEnd="@id/campoNombre"
         android:layout_marginTop="16dp"
@@ -139,6 +145,8 @@
         android:minHeight="48dp"
         android:textColor="@color/amarillo"
         android:textColorHint="@color/ambar"
+        app:errorTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
         app:boxStrokeColor="@color/ambar"
         app:hintTextColor="@color/ambar"
         app:passwordToggleEnabled="true"
@@ -157,7 +165,7 @@
         android:id="@+id/selAvatar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/campoRepetirContraseña"
+        android:layout_below="@id/campoRepetirContrase"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -196,7 +204,7 @@
         android:layout_width="144dp"
         android:layout_height="72dp"
         android:layout_below="@id/viewAvatar"
-        android:layout_alignEnd="@id/campoRepetirContraseña"
+        android:layout_alignEnd="@id/campoRepetirContrase"
         android:layout_alignParentLeft="false"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/amarillo"

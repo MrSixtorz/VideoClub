@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:id="@+id/barraPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/Marca"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:contentDescription="TODO"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/vc_marca" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/amarillo"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:scaleType="fitEnd"
+            app:shapeAppearanceOverlay="@style/circular"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mostrarNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/barraPrincipal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:minWidth="48dp"
+        android:textColor="@color/amarillo"
+        android:textSize="20sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/mostrarEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mostrarNombre"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:minWidth="48dp"
+        android:textColor="@color/amarillo"
+        android:textSize="20sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoNombre"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@id/mostrarEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/introducir_nombre"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/ambar"
+        app:errorTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:boxStrokeColor="@color/ambar"
+        app:hintTextColor="@color/ambar"
+        tools:ignore="Autofill">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/amarillo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/cambiarNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/mostrarEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@id/campoNombre"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@id/campoNombre"
+        android:backgroundTint="@color/amarillo"
+        android:contentDescription="@string/cancelar"
+        android:scaleType="centerInside"
+        android:text="Cambiar"
+        android:textColor="@color/azulmarino"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@id/campoNombre"
+        android:layout_alignStart="@id/campoNombre"
+        android:layout_alignEnd="@id/campoNombre"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/introducir_email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/amarillo"
+        android:textColorHint="@color/ambar"
+        app:errorTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:boxStrokeColor="@color/ambar"
+        app:hintTextColor="@color/ambar"
+        tools:ignore="Autofill,TextFields">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoEm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/amarillo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/cambiarEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/campoEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@id/campoNombre"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@id/campoEmail"
+        android:backgroundTint="@color/amarillo"
+        android:contentDescription="@string/cancelar"
+        android:scaleType="centerInside"
+        android:text="Cambiar"
+        android:textColor="@color/azulmarino"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/campoPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/campoEmail"
+        android:layout_alignStart="@id/campoNombre"
+        android:layout_alignEnd="@id/campoNombre"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Cambiar contraseña"
+        android:minHeight="48dp"
+        android:textColor="@color/amarillo"
+        android:textColorHint="@color/ambar"
+        app:errorTextColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:boxStrokeColor="@color/ambar"
+        app:hintTextColor="@color/ambar"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/ambar"
+        tools:ignore="Autofill,TextFields,TextContrastCheck">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/campoCon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/amarillo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/cambiarPass"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/campoEmail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@id/campoNombre"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@id/campoPass"
+        android:backgroundTint="@color/amarillo"
+        android:contentDescription="@string/cancelar"
+        android:scaleType="centerInside"
+        android:text="Cambiar"
+        android:textColor="@color/azulmarino"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/selAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/campoPass"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal"
+        android:text="Selecciona un Avatar deslizando a izquierda o derecha"
+        android:textColor="@color/amarillo"
+        android:textSize="15sp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/selAvatar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/Aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/viewAvatar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignEnd="@id/campoNombre"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/amarillo"
+        android:contentDescription="@string/cancelar"
+        android:scaleType="centerInside"
+        android:text="Aceptar"
+        android:textColor="@color/azulmarino"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Atras"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/Aceptar"
+        android:layout_alignStart="@id/campoNombre"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/amarillo"
+        android:contentDescription="@string/cancelar"
+        android:scaleType="centerInside"
+        android:text="Atrás"
+        android:textColor="@color/azulmarino"
+        android:textStyle="bold" />
+
+</RelativeLayout>
